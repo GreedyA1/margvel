@@ -1,6 +1,422 @@
 {
   "version": 1,
   "projects": {
+    "api-auth-firebase": {
+      "projectType": "library",
+      "root": "libs/api/auth/firebase",
+      "sourceRoot": "libs/api/auth/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/api/auth/firebase"],
+          "options": {
+            "jestConfig": "libs/api/auth/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/api/auth/firebase/src/**/*.ts",
+              "libs/api/auth/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "api-education-firebase": {
+      "projectType": "library",
+      "root": "libs/api/education/firebase",
+      "sourceRoot": "libs/api/education/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/api/education/firebase"],
+          "options": {
+            "jestConfig": "libs/api/education/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/api/education/firebase/src/**/*.ts",
+              "libs/api/education/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "api-jobs-firebase": {
+      "projectType": "library",
+      "root": "libs/api/jobs/firebase",
+      "sourceRoot": "libs/api/jobs/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/api/jobs/firebase"],
+          "options": {
+            "jestConfig": "libs/api/jobs/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/api/jobs/firebase/src/**/*.ts",
+              "libs/api/jobs/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "api-projects-firebase": {
+      "projectType": "library",
+      "root": "libs/api/projects/firebase",
+      "sourceRoot": "libs/api/projects/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/api/projects/firebase"],
+          "options": {
+            "jestConfig": "libs/api/projects/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/api/projects/firebase/src/**/*.ts",
+              "libs/api/projects/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "api-skills-firebase": {
+      "projectType": "library",
+      "root": "libs/api/skills/firebase",
+      "sourceRoot": "libs/api/skills/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/api/skills/firebase"],
+          "options": {
+            "jestConfig": "libs/api/skills/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/api/skills/firebase/src/**/*.ts",
+              "libs/api/skills/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "api-storage-firebase": {
+      "projectType": "library",
+      "root": "libs/api/storage/firebase",
+      "sourceRoot": "libs/api/storage/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/api/storage/firebase"],
+          "options": {
+            "jestConfig": "libs/api/storage/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/api/storage/firebase/src/**/*.ts",
+              "libs/api/storage/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "data-jobs": {
+      "projectType": "library",
+      "root": "libs/data/jobs",
+      "sourceRoot": "libs/data/jobs/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/data/jobs"],
+          "options": {
+            "jestConfig": "libs/data/jobs/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/data/jobs/src/**/*.ts",
+              "libs/data/jobs/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "data-projects": {
+      "projectType": "library",
+      "root": "libs/data/projects",
+      "sourceRoot": "libs/data/projects/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/data/projects"],
+          "options": {
+            "jestConfig": "libs/data/projects/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/data/projects/src/**/*.ts",
+              "libs/data/projects/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-chips": {
+      "projectType": "library",
+      "root": "libs/forms/chips",
+      "sourceRoot": "libs/forms/chips/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/chips"],
+          "options": {
+            "jestConfig": "libs/forms/chips/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/chips/src/**/*.ts",
+              "libs/forms/chips/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-education-form": {
+      "projectType": "library",
+      "root": "libs/forms/education-form",
+      "sourceRoot": "libs/forms/education-form/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/education-form"],
+          "options": {
+            "jestConfig": "libs/forms/education-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/education-form/src/**/*.ts",
+              "libs/forms/education-form/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-job-form": {
+      "projectType": "library",
+      "root": "libs/forms/job-form",
+      "sourceRoot": "libs/forms/job-form/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/job-form"],
+          "options": {
+            "jestConfig": "libs/forms/job-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/job-form/src/**/*.ts",
+              "libs/forms/job-form/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-login-form": {
+      "projectType": "library",
+      "root": "libs/forms/login-form",
+      "sourceRoot": "libs/forms/login-form/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/login-form"],
+          "options": {
+            "jestConfig": "libs/forms/login-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/login-form/src/**/*.ts",
+              "libs/forms/login-form/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-project-form": {
+      "projectType": "library",
+      "root": "libs/forms/project-form",
+      "sourceRoot": "libs/forms/project-form/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/project-form"],
+          "options": {
+            "jestConfig": "libs/forms/project-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/project-form/src/**/*.ts",
+              "libs/forms/project-form/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-skills": {
+      "projectType": "library",
+      "root": "libs/forms/skills",
+      "sourceRoot": "libs/forms/skills/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/skills"],
+          "options": {
+            "jestConfig": "libs/forms/skills/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/skills/src/**/*.ts",
+              "libs/forms/skills/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-upload-images": {
+      "projectType": "library",
+      "root": "libs/forms/upload-images",
+      "sourceRoot": "libs/forms/upload-images/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/upload-images"],
+          "options": {
+            "jestConfig": "libs/forms/upload-images/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/upload-images/src/**/*.ts",
+              "libs/forms/upload-images/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "forms-upload-task": {
+      "projectType": "library",
+      "root": "libs/forms/upload-task",
+      "sourceRoot": "libs/forms/upload-task/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/forms/upload-task"],
+          "options": {
+            "jestConfig": "libs/forms/upload-task/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/forms/upload-task/src/**/*.ts",
+              "libs/forms/upload-task/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "margvel": {
       "projectType": "application",
       "root": "apps/margvel",
@@ -122,6 +538,760 @@
       },
       "tags": [],
       "implicitDependencies": ["margvel"]
+    },
+    "store-auth-firebase": {
+      "projectType": "library",
+      "root": "libs/store/auth/firebase",
+      "sourceRoot": "libs/store/auth/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/auth/firebase"],
+          "options": {
+            "jestConfig": "libs/store/auth/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/auth/firebase/src/**/*.ts",
+              "libs/store/auth/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "store-education-firebase": {
+      "projectType": "library",
+      "root": "libs/store/education/firebase",
+      "sourceRoot": "libs/store/education/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/education/firebase"],
+          "options": {
+            "jestConfig": "libs/store/education/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/education/firebase/src/**/*.ts",
+              "libs/store/education/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "store-jobs-firebase": {
+      "projectType": "library",
+      "root": "libs/store/jobs/firebase",
+      "sourceRoot": "libs/store/jobs/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/jobs/firebase"],
+          "options": {
+            "jestConfig": "libs/store/jobs/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/jobs/firebase/src/**/*.ts",
+              "libs/store/jobs/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "store-projects-firebase": {
+      "projectType": "library",
+      "root": "libs/store/projects/firebase",
+      "sourceRoot": "libs/store/projects/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/projects/firebase"],
+          "options": {
+            "jestConfig": "libs/store/projects/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/projects/firebase/src/**/*.ts",
+              "libs/store/projects/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "store-projects-projects-api": {
+      "projectType": "library",
+      "root": "libs/store/projects/projects-api",
+      "sourceRoot": "libs/store/projects/projects-api/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/projects/projects-api"],
+          "options": {
+            "jestConfig": "libs/store/projects/projects-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/projects/projects-api/src/**/*.ts",
+              "libs/store/projects/projects-api/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "store-skills-firebase": {
+      "projectType": "library",
+      "root": "libs/store/skills/firebase",
+      "sourceRoot": "libs/store/skills/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/skills/firebase"],
+          "options": {
+            "jestConfig": "libs/store/skills/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/skills/firebase/src/**/*.ts",
+              "libs/store/skills/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "store-storage-firebase": {
+      "projectType": "library",
+      "root": "libs/store/storage/firebase",
+      "sourceRoot": "libs/store/storage/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/storage/firebase"],
+          "options": {
+            "jestConfig": "libs/store/storage/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/storage/firebase/src/**/*.ts",
+              "libs/store/storage/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "store-tools-firebase": {
+      "projectType": "library",
+      "root": "libs/store/tools/firebase",
+      "sourceRoot": "libs/store/tools/firebase/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/store/tools/firebase"],
+          "options": {
+            "jestConfig": "libs/store/tools/firebase/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/tools/firebase/src/**/*.ts",
+              "libs/store/tools/firebase/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "tools-pipes-sort-by": {
+      "projectType": "library",
+      "root": "libs/tools/pipes/sort-by",
+      "sourceRoot": "libs/tools/pipes/sort-by/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/tools/pipes/sort-by"],
+          "options": {
+            "jestConfig": "libs/tools/pipes/sort-by/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/tools/pipes/sort-by/src/**/*.ts",
+              "libs/tools/pipes/sort-by/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "types-auth": {
+      "projectType": "library",
+      "root": "libs/types/auth",
+      "sourceRoot": "libs/types/auth/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/types/auth"],
+          "options": {
+            "jestConfig": "libs/types/auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/types/auth/src/**/*.ts",
+              "libs/types/auth/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "types-education": {
+      "projectType": "library",
+      "root": "libs/types/education",
+      "sourceRoot": "libs/types/education/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/types/education"],
+          "options": {
+            "jestConfig": "libs/types/education/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/types/education/src/**/*.ts",
+              "libs/types/education/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "types-facades-upload-facade": {
+      "projectType": "library",
+      "root": "libs/types/facades/upload-facade",
+      "sourceRoot": "libs/types/facades/upload-facade/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/types/facades/upload-facade"],
+          "options": {
+            "jestConfig": "libs/types/facades/upload-facade/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/types/facades/upload-facade/src/**/*.ts",
+              "libs/types/facades/upload-facade/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "types-job": {
+      "projectType": "library",
+      "root": "libs/types/job",
+      "sourceRoot": "libs/types/job/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/types/job"],
+          "options": {
+            "jestConfig": "libs/types/job/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/types/job/src/**/*.ts",
+              "libs/types/job/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "types-project": {
+      "projectType": "library",
+      "root": "libs/types/project",
+      "sourceRoot": "libs/types/project/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/types/project"],
+          "options": {
+            "jestConfig": "libs/types/project/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/types/project/src/**/*.ts",
+              "libs/types/project/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "types-skill": {
+      "projectType": "library",
+      "root": "libs/types/skill",
+      "sourceRoot": "libs/types/skill/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/types/skill"],
+          "options": {
+            "jestConfig": "libs/types/skill/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/types/skill/src/**/*.ts",
+              "libs/types/skill/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-confirm-dialog": {
+      "projectType": "library",
+      "root": "libs/ui/confirm-dialog",
+      "sourceRoot": "libs/ui/confirm-dialog/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/confirm-dialog"],
+          "options": {
+            "jestConfig": "libs/ui/confirm-dialog/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/confirm-dialog/src/**/*.ts",
+              "libs/ui/confirm-dialog/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-drop-down-menu": {
+      "projectType": "library",
+      "root": "libs/ui/drop-down-menu",
+      "sourceRoot": "libs/ui/drop-down-menu/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/drop-down-menu"],
+          "options": {
+            "jestConfig": "libs/ui/drop-down-menu/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/drop-down-menu/src/**/*.ts",
+              "libs/ui/drop-down-menu/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-drop-zone": {
+      "projectType": "library",
+      "root": "libs/ui/drop-zone",
+      "sourceRoot": "libs/ui/drop-zone/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/drop-zone"],
+          "options": {
+            "jestConfig": "libs/ui/drop-zone/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/drop-zone/src/**/*.ts",
+              "libs/ui/drop-zone/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-education-card": {
+      "projectType": "library",
+      "root": "libs/ui/education-card",
+      "sourceRoot": "libs/ui/education-card/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/education-card"],
+          "options": {
+            "jestConfig": "libs/ui/education-card/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/education-card/src/**/*.ts",
+              "libs/ui/education-card/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-full-length-menu": {
+      "projectType": "library",
+      "root": "libs/ui/full-length-menu",
+      "sourceRoot": "libs/ui/full-length-menu/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/full-length-menu"],
+          "options": {
+            "jestConfig": "libs/ui/full-length-menu/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/full-length-menu/src/**/*.ts",
+              "libs/ui/full-length-menu/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-images-control": {
+      "projectType": "library",
+      "root": "libs/ui/images-control",
+      "sourceRoot": "libs/ui/images-control/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/images-control"],
+          "options": {
+            "jestConfig": "libs/ui/images-control/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/images-control/src/**/*.ts",
+              "libs/ui/images-control/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-job-card": {
+      "projectType": "library",
+      "root": "libs/ui/job-card",
+      "sourceRoot": "libs/ui/job-card/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/job-card"],
+          "options": {
+            "jestConfig": "libs/ui/job-card/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/job-card/src/**/*.ts",
+              "libs/ui/job-card/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-login-dialog": {
+      "projectType": "library",
+      "root": "libs/ui/login-dialog",
+      "sourceRoot": "libs/ui/login-dialog/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/login-dialog"],
+          "options": {
+            "jestConfig": "libs/ui/login-dialog/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/login-dialog/src/**/*.ts",
+              "libs/ui/login-dialog/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-login-page": {
+      "projectType": "library",
+      "root": "libs/ui/login-page",
+      "sourceRoot": "libs/ui/login-page/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/login-page"],
+          "options": {
+            "jestConfig": "libs/ui/login-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/login-page/src/**/*.ts",
+              "libs/ui/login-page/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-project-card": {
+      "projectType": "library",
+      "root": "libs/ui/project-card",
+      "sourceRoot": "libs/ui/project-card/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/project-card"],
+          "options": {
+            "jestConfig": "libs/ui/project-card/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/project-card/src/**/*.ts",
+              "libs/ui/project-card/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-project-details": {
+      "projectType": "library",
+      "root": "libs/ui/project-details",
+      "sourceRoot": "libs/ui/project-details/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/project-details"],
+          "options": {
+            "jestConfig": "libs/ui/project-details/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/project-details/src/**/*.ts",
+              "libs/ui/project-details/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-skills-chip": {
+      "projectType": "library",
+      "root": "libs/ui/skills-chip",
+      "sourceRoot": "libs/ui/skills-chip/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/skills-chip"],
+          "options": {
+            "jestConfig": "libs/ui/skills-chip/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/skills-chip/src/**/*.ts",
+              "libs/ui/skills-chip/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-snackbar": {
+      "projectType": "library",
+      "root": "libs/ui/snackbar",
+      "sourceRoot": "libs/ui/snackbar/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/snackbar"],
+          "options": {
+            "jestConfig": "libs/ui/snackbar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/snackbar/src/**/*.ts",
+              "libs/ui/snackbar/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "ui-upload-images": {
+      "projectType": "library",
+      "root": "libs/ui/upload-images",
+      "sourceRoot": "libs/ui/upload-images/src",
+      "prefix": "margvel",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/upload-images"],
+          "options": {
+            "jestConfig": "libs/ui/upload-images/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/upload-images/src/**/*.ts",
+              "libs/ui/upload-images/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
     }
   }
 }

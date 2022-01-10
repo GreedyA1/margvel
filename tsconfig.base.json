@@ -14,7 +14,75 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@margvel/api/auth/firebase": ["libs/api/auth/firebase/src/index.ts"],
+      "@margvel/api/education/firebase": [
+        "libs/api/education/firebase/src/index.ts"
+      ],
+      "@margvel/api/jobs/firebase": ["libs/api/jobs/firebase/src/index.ts"],
+      "@margvel/api/projects/firebase": [
+        "libs/api/projects/firebase/src/index.ts"
+      ],
+      "@margvel/api/skills/firebase": ["libs/api/skills/firebase/src/index.ts"],
+      "@margvel/api/storage/firebase": [
+        "libs/api/storage/firebase/src/index.ts"
+      ],
+      "@margvel/data/jobs": ["libs/data/jobs/src/index.ts"],
+      "@margvel/data/projects": ["libs/data/projects/src/index.ts"],
+      "@margvel/forms/chips": ["libs/forms/chips/src/index.ts"],
+      "@margvel/forms/education-form": [
+        "libs/forms/education-form/src/index.ts"
+      ],
+      "@margvel/forms/job-form": ["libs/forms/job-form/src/index.ts"],
+      "@margvel/forms/login-form": ["libs/forms/login-form/src/index.ts"],
+      "@margvel/forms/project-form": ["libs/forms/project-form/src/index.ts"],
+      "@margvel/forms/skills": ["libs/forms/skills/src/index.ts"],
+      "@margvel/forms/upload-images": ["libs/forms/upload-images/src/index.ts"],
+      "@margvel/forms/upload-task": ["libs/forms/upload-task/src/index.ts"],
+      "@margvel/store/auth/firebase": ["libs/store/auth/firebase/src/index.ts"],
+      "@margvel/store/education/firebase": [
+        "libs/store/education/firebase/src/index.ts"
+      ],
+      "@margvel/store/jobs/firebase": ["libs/store/jobs/firebase/src/index.ts"],
+      "@margvel/store/projects/firebase": [
+        "libs/store/projects/firebase/src/index.ts"
+      ],
+      "@margvel/store/projects/projects-api": [
+        "libs/store/projects/projects-api/src/index.ts"
+      ],
+      "@margvel/store/skills/firebase": [
+        "libs/store/skills/firebase/src/index.ts"
+      ],
+      "@margvel/store/storage/firebase": [
+        "libs/store/storage/firebase/src/index.ts"
+      ],
+      "@margvel/store/tools/firebase": [
+        "libs/store/tools/firebase/src/index.ts"
+      ],
+      "@margvel/tools/pipes/sort-by": ["libs/tools/pipes/sort-by/src/index.ts"],
+      "@margvel/types/auth": ["libs/types/auth/src/index.ts"],
+      "@margvel/types/education": ["libs/types/education/src/index.ts"],
+      "@margvel/types/facades/upload-facade": [
+        "libs/types/facades/upload-facade/src/index.ts"
+      ],
+      "@margvel/types/job": ["libs/types/job/src/index.ts"],
+      "@margvel/types/project": ["libs/types/project/src/index.ts"],
+      "@margvel/types/skill": ["libs/types/skill/src/index.ts"],
+      "@margvel/ui/confirm-dialog": ["libs/ui/confirm-dialog/src/index.ts"],
+      "@margvel/ui/drop-down-menu": ["libs/ui/drop-down-menu/src/index.ts"],
+      "@margvel/ui/drop-zone": ["libs/ui/drop-zone/src/index.ts"],
+      "@margvel/ui/education-card": ["libs/ui/education-card/src/index.ts"],
+      "@margvel/ui/full-length-menu": ["libs/ui/full-length-menu/src/index.ts"],
+      "@margvel/ui/images-control": ["libs/ui/images-control/src/index.ts"],
+      "@margvel/ui/job-card": ["libs/ui/job-card/src/index.ts"],
+      "@margvel/ui/login-dialog": ["libs/ui/login-dialog/src/index.ts"],
+      "@margvel/ui/login-page": ["libs/ui/login-page/src/index.ts"],
+      "@margvel/ui/project-card": ["libs/ui/project-card/src/index.ts"],
+      "@margvel/ui/project-details": ["libs/ui/project-details/src/index.ts"],
+      "@margvel/ui/skills-chip": ["libs/ui/skills-chip/src/index.ts"],
+      "@margvel/ui/snackbar": ["libs/ui/snackbar/src/index.ts"],
+      "@margvel/ui/upload-images": ["libs/ui/upload-images/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
